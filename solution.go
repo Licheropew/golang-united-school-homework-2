@@ -16,7 +16,6 @@ const (
 	SidesTriangle Sides = 3
 	SidesSquare   Sides = 4
 	SidesCircle   Sides = 0
-	SidesOther    Sides = 6
 )
 
 type Sides int

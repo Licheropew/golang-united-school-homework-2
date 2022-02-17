@@ -21,13 +21,12 @@ const (
 type Sides int
 
 func CalcSquare(sideLen float64, sidesNum Sides) float64 {
-	if sidesNum == SidesTriangle {
+	switch sidesNum {
+	case SidesTriangle:
 		return math.Pow(sideLen, 2) * math.Sqrt(3) * 0.25
-	}
-	if sidesNum == SidesSquare {
+	case SidesSquare:
 		return math.Pow(sideLen, 2)
-	}
-	if sidesNum == SidesCircle {
+	case SidesCircle:
 		return math.Pow(sideLen, 2) * math.Pi
 	}
 	return 0
